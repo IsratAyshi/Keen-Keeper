@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ayesha Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/68.jpg",
+    "email": "ayesha.rahman@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "close friend"],
+    "bio": "We studied CSE together. Used to work on assignments late at night and still keep in touch occasionally.",
+    "goal": 14,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 2,
+    "name": "Tanvir Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/45.jpg",
+    "email": "tanvir.hasan@yahoo.com",
+    "days_since_contact": 10,
+    "status": "almost due",
+    "tags": ["school", "gaming"],
+    "bio": "School friend. We still play online games together sometimes, especially on weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 3,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/32.jpg",
+    "email": "nusrat.jahan@outlook.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["office", "colleague"],
+    "bio": "Works in the same company. We often grab coffee during breaks and talk about work and life.",
+    "goal": 14,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 4,
+    "name": "Sabbir Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/22.jpg",
+    "email": "sabbir.ahmed@gmail.com",
+    "days_since_contact": 21,
+    "status": "overdue",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym partner. We used to train together regularly but haven’t met in a while.",
+    "goal": 14,
+    "next_due_date": "2026-03-29"
+  },
+  {
+    "id": 5,
+    "name": "Farhana Karim",
+    "picture": "https://randomuser.me/api/portraits/women/55.jpg",
+    "email": "farhana.karim@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["family friend"],
+    "bio": "Family friend. We meet during events and occasionally catch up over phone calls.",
+    "goal": 14,
+    "next_due_date": "2026-04-17"
+  },
+  {
+    "id": 6,
+    "name": "Imran Chowdhury",
+    "picture": "https://randomuser.me/api/portraits/men/60.jpg",
+    "email": "imran.chowdhury@protonmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["startup", "tech"],
+    "bio": "Met at a tech meetup. We discuss startups, ideas, and sometimes collaborate on small projects.",
+    "goal": 14,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 7,
+    "name": "Mehedi Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "mehedi.hasan@gmail.com",
+    "days_since_contact": 16,
+    "status": "overdue",
+    "tags": ["neighborhood", "childhood"],
+    "bio": "Grew up in the same neighborhood. We used to play ক্রিকেট together almost every evening.",
+    "goal": 14,
+    "next_due_date": "2026-04-02"
+  },
+  {
+    "id": 8,
+    "name": "Rafia Sultana",
+    "picture": "https://randomuser.me/api/portraits/women/41.jpg",
+    "email": "rafia.sultana@gmail.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["book club"],
+    "bio": "Met through a local book club. We often exchange book recommendations and discuss novels.",
+    "goal": 14,
+    "next_due_date": "2026-04-21"
+  }
+]
