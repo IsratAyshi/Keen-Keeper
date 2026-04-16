@@ -7,13 +7,19 @@ export const ActivityContext = createContext();
 
 const ActivityContextProvider = ({ children }) => {
 
-    const [timelineActivities, setTimelineActivities] = useState(() => getActivitiesFromLocalDB());
+    const [timelineActivities, setTimelineActivities] = useState([]);
 
 
-    // useEffect(() => {
-    //     const getAllActivitiesFromLocalDB = getActivitiesFromLocalDB();
-    //     console.log(getAllActivitiesFromLocalDB, "from local db");
-    // }, []);
+    useEffect(() => {
+        const getAllActivitiesFromLocalDB = getActivitiesFromLocalDB();
+        // console.log(getAllActivitiesFromLocalDB, "from local db");
+
+        if (getAllActivitiesFromLocalDB.length > 0) {
+            setTimelineActivities(getAllActivitiesFromLocalDB);
+        }
+    }, []);
+
+
 
     const data = {
         timelineActivities,

@@ -1,10 +1,12 @@
 import { getActivitiesFromLocalDB } from '@/utils/localDB';
 import React, { use } from 'react';
 import ActivityCount from '../ActivityCount';
+// import friends from '../../data/friends.json';
 
 
 const friendsPromise = async () => {
     const res = await fetch('http://localhost:3000/friends.json');
+    // const res = await fetch('/friends.json');
     const data = await res.json();
     return data;
 }

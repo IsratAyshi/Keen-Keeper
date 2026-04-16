@@ -1,6 +1,8 @@
-"use client";
+
 
 const getActivitiesFromLocalDB = () => {
+    if (typeof window === "undefined") return [];
+
     const allActivities = localStorage.getItem('activities');
     
     // if (allActivities) {
@@ -26,6 +28,8 @@ const getActivitiesFromLocalDB = () => {
 }
 
 const addActivityToLocalDB = (activity) => {
+    if (typeof window === "undefined") return;
+
     const allActivities = getActivitiesFromLocalDB();
 
     allActivities.push(activity);

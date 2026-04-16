@@ -5,11 +5,12 @@ import { FiArchive, FiPhoneCall } from 'react-icons/fi';
 import { MdOutlineTextsms } from 'react-icons/md';
 import { PiVideoCamera } from 'react-icons/pi';
 import { RiDeleteBin6Line, RiNotificationSnoozeLine } from 'react-icons/ri';
-
+// import friends from '@/data/friends.json';
 
 
 const friendsPromise = async () => {
     const res = await fetch('http://localhost:3000/friends.json');
+    // const res = await fetch('/friends.json');
     const data = await res.json();
     return data;
 }
