@@ -1,3 +1,4 @@
+import AppDetailsButtons from '@/components/appDetailsButtons/AppDetailsButtons';
 import Image from 'next/image';
 import React from 'react';
 import { FiArchive, FiPhoneCall } from 'react-icons/fi';
@@ -6,11 +7,24 @@ import { PiVideoCamera } from 'react-icons/pi';
 import { RiDeleteBin6Line, RiNotificationSnoozeLine } from 'react-icons/ri';
 
 
+
 const friendsPromise = async () => {
     const res = await fetch('http://localhost:3000/friends.json');
     const data = await res.json();
     return data;
 }
+
+export const generateMetadata = async ({ params }) => {
+    const friends = await friendsPromise();
+    const { friendId } = await params;
+
+    const friend = friends.find(frnd => frnd.id == friendId);
+
+    return {
+        title: `${friend.name} Details | Keen Keeper`,
+    }
+}
+
 
 const FriendDetailsPage = async ({ params }) => {
 
@@ -18,10 +32,10 @@ const FriendDetailsPage = async ({ params }) => {
 
 
     const { friendId } = await params;
-    console.log(friendId);
+    // console.log(friendId);
 
     const friend = friends.find(frnd => frnd.id == friendId);
-    console.log(friend);
+    // console.log(friend);
 
 
 
@@ -134,23 +148,7 @@ const FriendDetailsPage = async ({ params }) => {
                             Quick Check-In
                         </h3>
 
-                        <div className="grid grid-cols-3 gap-3 ">
-                            <button className="border border-gray-200 bg-[#f8fafc] rounded-lg flex flex-col items-center gap-2 py-4 font-normal hover:border-success hover:bg-green-50">
-                                <FiPhoneCall className="text-2xl text-[#1f2937]" />
-                                <span className="text-lg text-[#1f2937]">Call</span>
-                            </button>
-
-                            <button className="border border-gray-200 bg-[#f8fafc] rounded-lg flex flex-col items-center gap-2 py-4 font-normal hover:border-info hover:bg-blue-50">
-                                <MdOutlineTextsms className="text-2xl text-[#1f2937]" />
-                                <span className="text-lg text-[#1f2937]">Text</span>
-                            </button>
-
-                            <button className="border border-gray-200 bg-[#f8fafc] rounded-lg flex flex-col items-center gap-2 py-4 font-normal hover:border-primary hover:bg-purple-50">
-                                <PiVideoCamera className='text-2xl text-[#1f2937]' />
-                                <span className="text-lg text-[#1f2937]">Video</span>
-                            </button>
-
-                        </div>
+                        <AppDetailsButtons friendName={friend.name} />
 
                     </div>
 
