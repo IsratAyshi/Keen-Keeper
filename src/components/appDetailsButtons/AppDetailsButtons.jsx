@@ -1,5 +1,6 @@
 "use client";
 import { ActivityContext } from '@/context/ActivityContext';
+import { addActivityToLocalDB } from '@/utils/localDB';
 import { useContext } from 'react';
 import { FiPhoneCall } from 'react-icons/fi';
 import { MdOutlineTextsms } from 'react-icons/md';
@@ -10,7 +11,7 @@ import { toast } from 'react-toastify';
 const AppDetailsButtons = ({ friendName }) => {
 
     const addActivityContext = useContext(ActivityContext);
-    console.log("CONTEXT", addActivityContext);
+    // console.log("CONTEXT", addActivityContext);
 
     const handleAddActivity = (type, friendName) => {
         const activity = {
@@ -24,6 +25,8 @@ const AppDetailsButtons = ({ friendName }) => {
             [...addActivityContext.timelineActivities, activity]
         );
         toast.success(`${activity.type} with ${activity.friendName}`);
+
+        addActivityToLocalDB(activity);
         // console.log(addActivityContext.timelineActivities);
     };
 

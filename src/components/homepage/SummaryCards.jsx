@@ -1,4 +1,6 @@
+import { getActivitiesFromLocalDB } from '@/utils/localDB';
 import React, { use } from 'react';
+import ActivityCount from '../ActivityCount';
 
 
 const friendsPromise = async () => {
@@ -31,7 +33,9 @@ const SummaryCards = async () => {
                 <p className='text-[#64748b] text-lg'>Need Attention</p>
             </div>
             <div className='card bg-base-100 shadow p-8 flex flex-col items-center gap-2'>
-                <h2 className='text-[32px] font-semibold'>12</h2>
+                <h2 className='text-[32px] font-semibold'>
+                    <ActivityCount />
+                </h2>
                 <p className='text-[#64748b] text-lg'>Interactions This Month</p>
             </div>
         </div>
