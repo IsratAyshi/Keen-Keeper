@@ -1,20 +1,20 @@
 import { getActivitiesFromLocalDB } from '@/utils/localDB';
 import React, { use } from 'react';
 import ActivityCount from '../ActivityCount';
-// import friends from '../../data/friends.json';
+import friends from '../../data/friends.json';
 
 
 const friendsPromise = async () => {
-    const res = await fetch('http://localhost:3000/friends.json');
+    // const res = await fetch('http://localhost:3000/friends.json');
     // const res = await fetch('/friends.json');
-    const data = await res.json();
-    return data;
+    // const data = await res.json();
+    // return data;
 }
 
 
 
 const SummaryCards = async () => {
-    const friends = await friendsPromise();
+    // const friends = await friendsPromise();
     // console.log(friends);
 
     const onTrack = friends.filter(friend => friend.status === 'On-track');

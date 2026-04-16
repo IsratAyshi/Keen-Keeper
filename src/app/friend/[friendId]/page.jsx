@@ -5,18 +5,18 @@ import { FiArchive, FiPhoneCall } from 'react-icons/fi';
 import { MdOutlineTextsms } from 'react-icons/md';
 import { PiVideoCamera } from 'react-icons/pi';
 import { RiDeleteBin6Line, RiNotificationSnoozeLine } from 'react-icons/ri';
-// import friends from '@/data/friends.json';
+import friends from '@/data/friends.json';
 
 
 const friendsPromise = async () => {
-    const res = await fetch('http://localhost:3000/friends.json');
+    // const res = await fetch('http://localhost:3000s/friends.json');
     // const res = await fetch('/friends.json');
-    const data = await res.json();
-    return data;
+    // const data = await res.json();
+    // return data;
 }
 
 export const generateMetadata = async ({ params }) => {
-    const friends = await friendsPromise();
+    // const friends = await friendsPromise();
     const { friendId } = await params;
 
     const friend = friends.find(frnd => frnd.id == friendId);
@@ -29,7 +29,7 @@ export const generateMetadata = async ({ params }) => {
 
 const FriendDetailsPage = async ({ params }) => {
 
-    const friends = await friendsPromise();
+    // const friends = await friendsPromise();
 
 
     const { friendId } = await params;
