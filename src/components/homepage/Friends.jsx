@@ -1,19 +1,23 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import friends from '../../data/friends.json';
+// import friends from '../../data/friends.json';
 
 const friendsPromise = async () => {
-    // const res = await fetch('http://localhost:3000/friends.json');
+    const res = await fetch('https://keen-keeper-a7-code.vercel.app/friends.json',
+        {
+            cache: 'no-store'
+        }
+    );
     // const res = await fetch('/friends.json');
-    // const data = await res.json();
-    // return data;
+    const data = await res.json();
+    return data;
 }
 
 
 const Friends = async () => {
 
-    // const friends = await friendsPromise();
+    const friends = await friendsPromise();
     // console.log(friends);
 
     return (
