@@ -16,7 +16,7 @@ const Navbar = () => {
     // console.log(pathname);
 
     return (
-        <nav className='shadow'>
+        <nav className='shadow border-b border-gray-200'>
             <div className="flex flex-col md:flex-row md:justify-between gap-4 items-center py-2 container mx-auto ">
                 <Image
                     src={logoImg}

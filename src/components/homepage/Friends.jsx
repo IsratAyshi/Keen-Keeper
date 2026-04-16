@@ -16,13 +16,13 @@ const Friends = async () => {
 
     return (
 
-        <div className='container mx-auto border-t-2 border-gray-200'>
+        <div className='container mx-auto border-t-2 border-gray-200 '>
             <h2 className='text-2xl font-semibold mt-10 mb-4'>Your Friends</h2>
 
-            <Link href={'/friendDetails'} className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap- mb-10 text-center'>
+            <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10 text-center'>
                 {
                     friends.map(friend =>
-                        <div key={friend.id} className='card bg-base-100 shadow p-8 flex flex-col items-center gap-2'>
+                        <Link href={`/friend/${friend.id}`} key={friend.id} className='card bg-base-100 shadow p-8 flex flex-col items-center gap-2'>
 
                             <Image
                                 src={friend.picture}
@@ -55,9 +55,10 @@ const Friends = async () => {
                                     {friend.status}
                                 </span>
                             </div>
-                        </div>)
+                        </Link>
+                    )
                 }
-            </Link>
+            </div>
 
         </div>
     );

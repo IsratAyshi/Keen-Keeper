@@ -8,7 +8,7 @@
     "status": "Overdue",
     "tags": ["university", "close friend"],
     "bio": "We studied CSE together. Used to work on assignments late at night and still keep in touch occasionally.",
-    "goal": 14,
+    "goal": 19,
     "next_due_date": "2026-04-01"
   },
   {
@@ -20,7 +20,7 @@
     "status": "Almost due",
     "tags": ["school", "gaming"],
     "bio": "School friend. We still play online games together sometimes, especially on weekends.",
-    "goal": 14,
+    "goal": 22,
     "next_due_date": "2026-04-19"
   },
   {
@@ -32,8 +32,8 @@
     "status": "On-track",
     "tags": ["office", "colleague"],
     "bio": "Works in the same company. We often grab coffee during breaks and talk about work and life.",
-    "goal": 14,
-    "next_due_date": "2026-04-24"
+    "goal": 3,
+    "next_due_date": "2026-04-20"
   },
   {
     "id": 4,
@@ -56,8 +56,8 @@
     "status": "Almost due",
     "tags": ["family friend"],
     "bio": "Family friend. We meet during events and occasionally catch up over phone calls.",
-    "goal": 14,
-    "next_due_date": "2026-04-17"
+    "goal": 40,
+    "next_due_date": "2026-05-17"
   },
   {
     "id": 6,
@@ -68,7 +68,7 @@
     "status": "On-track",
     "tags": ["startup", "tech"],
     "bio": "Met at a tech meetup. We discuss startups, ideas, and sometimes collaborate on small projects.",
-    "goal": 14,
+    "goal": 30,
     "next_due_date": "2026-04-26"
   },
   {
@@ -81,7 +81,7 @@
     "tags": ["neighborhood", "childhood"],
     "bio": "Grew up in the same neighborhood. We used to play ক্রিকেট together almost every evening.",
     "goal": 14,
-    "next_due_date": "2026-04-02"
+    "next_due_date": "2026-05-02"
   },
   {
     "id": 8,
@@ -92,8 +92,8 @@
     "status": "On-track",
     "tags": ["book club"],
     "bio": "Met through a local book club. We often exchange book recommendations and discuss novels.",
-    "goal": 14,
-    "next_due_date": "2026-04-21"
+    "goal": 24,
+    "next_due_date": "2026-05-10"
   },
   {
     "id": 9,
@@ -104,7 +104,7 @@
     "status": "Almost due",
     "tags": ["freelance", "design"],
     "bio": "Met through freelance projects. We often collaborate on UI/UX design work and share client leads.",
-    "goal": 14,
+    "goal": 7,
     "next_due_date": "2026-04-16"
   },
   {
@@ -116,7 +116,7 @@
     "status": "On-track",
     "tags": ["travel", "close friend"],
     "bio": "Travel buddy. We've explored several places together and plan trips whenever we get time.",
-    "goal": 14,
+    "goal": 10,
     "next_due_date": "2026-04-27"
   }
 ]
